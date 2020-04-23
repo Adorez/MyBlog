@@ -485,10 +485,10 @@
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+      document.title = "Gulf" + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+      document.title = "DDWY" + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
@@ -606,7 +606,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/JoeyBling" target="_blank" class="search-title" >
+              <a href="/MyBlog/null" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -615,7 +615,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
+              <a href="/MyBlog/null" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -624,7 +624,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
+              <a href="/MyBlog/null" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -633,7 +633,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
+              <a href="https://blog.csdn.net/weixin_44876536" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -738,6 +738,16 @@
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/MyBlog/plugins/ribbon.js/ribbon.min.js"></script> -->
   
   
+  
+  <script type="text/javascript" src="/MyBlog/lib/snow.js"></script>
+  <script type="text/javascript" src="/MyBlog/lib/jquery-2.1.4.min.js"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+      $("canvas").css("z-index","500").remove();
+      snow.down();
+    });
+  </script>
   
 </body>
 
